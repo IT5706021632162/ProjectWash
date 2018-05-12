@@ -1,104 +1,85 @@
 <template>
-  <div>
+  <div class="a">
     <div class="tile is-ancestor">
       <div class="tile is-parent">
         <article class="tile is-child box">
-          <p class="title">One</p>
-          <p class="subtitle">Subtitle</p>
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child box">
-          <p class="title">Two</p>
-          <p class="subtitle">Subtitle</p>
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child box">
-          <p class="title">Three</p>
-          <p class="subtitle">Subtitle</p>
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child box">
-          <p class="title">Four</p>
-          <p class="subtitle">Subtitle</p>
-        </article>
-      </div>
-    </div>
-
-    <div class="tile is-ancestor">
-      <div class="tile is-parent is-6">
-        <article class="tile is-child box">
-          <h4 class="title">Five</h4>
-          <div class="content">
-            <chart :type="'doughnut'" :data="chartData"></chart>
-          </div>
-        </article>
-      </div>
-      <div class="tile is-parent is-6">
-        <article class="tile is-child box">
-          <h4 class="title">Six</h4>
-          <div class="content">
-            <chart :type="'pie'" :data="chartData"></chart>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <div class="tile is-ancestor">
-      <div class="tile is-vertical is-9">
-        <div class="tile">
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p class="title">Seven</p>
-              <p class="subtitle">Subtitle</p>
-              <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-              </div>
-            </article>
-          </div>
-          <div class="tile is-8 is-parent">
-            <article class="tile is-child box">
-              <p class="title">Eight</p>
-              <p class="subtitle">Subtitle</p>
-              <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="tile">
-          <div class="tile is-8 is-parent">
-            <article class="tile is-child box">
-              <p class="title">Nine</p>
-              <p class="subtitle">Subtitle</p>
-              <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-              </div>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p class="title">Ten</p>
-              <p class="subtitle">Subtitle</p>
-              <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child box">
-          <div class="content">
-            <p class="title">Eleven</p>
-            <p class="subtitle">Subtitle</p>
-            <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
-              <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
-            </div>
-          </div>
+          <h4 class="title">Table</h4>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Instrument</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>Name</th>
+                <th>Instrument</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>Misty Abbott</td>
+                <td>Bass Guitar</td>
+                <td class="is-icon">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </td>
+                <td class="is-icon">
+                  <a href="#">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>John Smith</td>
+                <td>Rhythm Guitar</td>
+                <td class="is-icon">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </td>
+                <td class="is-icon">
+                  <a href="#">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Robert Mikels</td>
+                <td>Lead Guitar</td>
+                <td class="is-icon">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </td>
+                <td class="is-icon">
+                  <a href="#">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Karyn Holmberg</td>
+                <td>Drums</td>
+                <td class="is-icon">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </td>
+                <td class="is-icon">
+                  <a href="#">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </article>
       </div>
     </div>
@@ -106,39 +87,12 @@
 </template>
 
 <script>
-import Chart from 'vue-bulma-chartjs'
-
 export default {
-  components: {
-    Chart
-  },
-
   data () {
     return {
-      data: [300, 50, 100]
+      data: []
     }
   },
-
-  computed: {
-    chartData () {
-      return {
-        labels: [
-          'Red',
-          'Blue',
-          'Yellow'
-        ],
-        datasets: [{
-          data: this.data,
-          backgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56'
-          ]
-        }]
-      }
-    }
-  },
-
   mounted () {
     setInterval(() => {
       // https://github.com/vuejs/vue/issues/2873
@@ -152,4 +106,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .a{
+
+    margin: 30px;
+  }
 </style>

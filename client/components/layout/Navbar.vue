@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-bold app-navbar animated" :class="{ slideInDown: show, slideOutDown: !show }">
+  <section class="hero is-info app-navbar animated" :class="{ slideInDown: show, slideOutDown: !show }">
     <div class="hero-head">
       <nav class="nav">
         <div class="nav-left">
@@ -9,7 +9,7 @@
         </div>
         <div class="nav-center">
           <a class="nav-item hero-brand" href="/">
-            <img src="~assets/logo.svg" :alt="pkginfo.description">
+            <img src="~assets/logo1.gif" :alt="pkginfo.description">
             <tooltip  placement="right" type="success" size="small" :no-animate="true" :always="true" :rounded="true">
               <div class="is-hidden-mobile">
                 <span class="vue">W A S H</span>
@@ -90,7 +90,7 @@ export default {
 .hero-brand {
   .vue {
     margin-left: 10px;
-    color: #36AC70;
+    color: #FFFFFF;
   }
   .admin {
     color: #28374B;
