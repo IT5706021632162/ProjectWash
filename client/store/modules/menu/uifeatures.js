@@ -2,14 +2,14 @@ import lazyLoading from './lazyLoading'
 
 export default {
   meta: {
-    label: 'UI Features',
-    icon: 'fa-laptop',
+    label: 'สาขา 2',
+    icon: 'fa-line-chart',
     expanded: false
   },
 
   children: [
     {
-      name: 'Buttons',
+      name: 'ค่าน้ำ + ค่าไฟ',
       path: '/buttons',
       meta: {
         link: 'ui/Buttons.vue'
@@ -17,7 +17,7 @@ export default {
       component: lazyLoading('ui/Buttons')
     },
     {
-      name: 'Form',
+      name: 'รายรับ + รายจ่าย',
       path: '/form',
       meta: {
         link: 'ui/Form.vue'
@@ -25,7 +25,7 @@ export default {
       component: lazyLoading('ui/Form')
     },
     {
-      name: 'Typography',
+      name: 'จุดคุ้มทุน',
       path: '/typography',
       meta: {
         link: 'ui/Typography.vue'
@@ -33,12 +33,28 @@ export default {
       component: lazyLoading('ui/Typography')
     },
     {
-      name: 'Icons',
+      name: 'สรุปผล',
       path: '/icons',
       meta: {
         link: 'ui/Icons.vue'
       },
       component: lazyLoading('ui/Icons')
+    },
+    {
+      name: 'แจ้งเครื่องซักผ้า',
+      path: '/wash',
+      meta: {
+        link: 'ui/wash.vue'
+      },
+      component: lazyLoading('ui/wash')
+    },
+    {
+      name: 'ต้นทุน',
+      path: '/Cost',
+      meta: {
+        link: 'ui/Cost.vue'
+      },
+      component: lazyLoading('ui/Cost')
     }
   ]
 }

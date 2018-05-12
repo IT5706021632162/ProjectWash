@@ -16,13 +16,6 @@
             <input v-model="data.body.password" class="input" type="password" placeholder="password">
           </p>
 
-          <p class="control">
-            <label class="checkbox">
-              <input type="checkbox" v-model="data.rememberMe">
-              Remember me
-            </label>
-          </p>
-
           <hr>
           <p class="control">
             <button type="submit" class="button is-primary">Login</button>

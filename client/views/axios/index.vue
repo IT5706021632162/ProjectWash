@@ -1,5 +1,8 @@
 <template>
   <div>
+
+
+    หน้า  รindex
     <div class="tile is-ancestor">
       <div class="tile is-parent is-8">
         <article class="tile is-child box">

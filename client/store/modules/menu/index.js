@@ -2,8 +2,6 @@ import * as types from '../../mutation-types'
 import lazyLoading from './lazyLoading'
 import charts from './charts'
 import uifeatures from './uifeatures'
-import components from './components'
-import tables from './tables'
 
 // show: meta.label -> name
 // name: component name
@@ -12,28 +10,36 @@ import tables from './tables'
 const state = {
   items: [
     {
-      name: 'Dashboard',
+      name: 'Member',
       path: '/dashboard',
       meta: {
-        icon: 'fa-tachometer',
+        icon: 'fa-users',
         link: 'dashboard/index.vue'
       },
       component: lazyLoading('dashboard', true)
     },
     {
-      name: 'Axios',
+      name: 'Add Admin',
       path: '/axiosDemo',
       meta: {
         auth: true,
-        icon: 'fa-rocket',
+        icon: 'fa-user-plus',
+        link: 'axios/index.vue'
+      },
+      component: lazyLoading('axios', true)
+    },
+    {
+      name: 'Add  Credit',
+      path: '/axiosDemo',
+      meta: {
+        auth: true,
+        icon: 'fa-credit-card',
         link: 'axios/index.vue'
       },
       component: lazyLoading('axios', true)
     },
     charts,
-    uifeatures,
-    components,
-    tables
+    uifeatures
   ]
 }
 
